@@ -32,7 +32,7 @@ let carroXL = new Car(
     "170CV", 
     "1876 litros", 
     "aro 17'", 
-    "img/XL Cabine"
+    "img/XL Cabine.jpg"
 );
 
 let carroXLS = new Car(
