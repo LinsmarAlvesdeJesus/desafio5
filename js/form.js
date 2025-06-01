@@ -2,17 +2,23 @@
 //class contato
 
 class contato {
-    
+    constructor(nome, email, telefone, elogio, reclamacao, solicitacao) { 
+        this.nome = nome;
+        this.email = email;
+        this.telefone = telefone;
+        this.elogio = elogio;
+        this.reclamacao = reclamacao;
+        this.solicitacao = solicitacao; 
+    }
 }
-
 function Post(form) {
 
-  let data = new contato(form.elements.namedItem("nome").value,
-            form.elements.namedItem("sobrenome").value, 
-            form.elements.namedItem("email").value, 
-            form.elements.namedItem("cpf").value, 
-            form.elements.namedItem("telefone").value, 
-            form.elements.namedItem("contato").value);
+  let data = new contato(form.elements.namedItem("NOME").value, 
+            form.elements.namedItem("EMAIL").value, 
+            form.elements.namedItem("TELEFONE").value, 
+            form.elements.namedItem("ELOGIO").value, 
+            form.elements.namedItem("RECLAMAÇÃO").value);
+            form.elements.namedItem("SOLICITAÇÃO").value,
   
 }
 
