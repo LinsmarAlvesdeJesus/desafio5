@@ -11,16 +11,26 @@ html {
 }
 
 div#carousel {
-    height: 46vh;
-    width: 100%;
-     max-height: 628px;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    width: 100%; /* Reduz a largura para 50% */
+    max-width: 192git0px; /* Metade de 1920px (Full HD) */
+    margin: 0 auto; /* Centraliza o carrossel */
+    padding-bottom: 28.125%; /* Metade de 56.25% (para manter a proporção 16:9 na nova largura) */
+    position: relative; 
+    
+    /* Propriedades de fundo existentes para a imagem */
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+
+    /* Transições para suavizar a mudança de imagem */
+    -webkit-transition: background-image 0.5s ease-in-out;
+    -moz-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
 }
 
 div#carousel-title a {
     text-decoration: none;
+    color: #1351d8; 
 }
 
 div#carousel-title  {
@@ -29,6 +39,7 @@ div#carousel-title  {
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
+    font-size: 1.2em; 
 }
 
 header ul {
