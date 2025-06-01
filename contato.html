@@ -8,7 +8,6 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
-    <script src="js/form.js"></script>
 </head>
 <body>
     <header>       
@@ -37,16 +36,24 @@
             </div>
             <div>
                 <h2 class="titulo">Sobre Você</h2>
-            <form onsubmit="Post(this);">
-                <input type="text" name="nome" placeholder="NOME*" class="fordform" required>
-                <input type="text" name="email" placeholder="E-MAIL*" class="fordform" required>
-                <input type="text" name="telefone" placeholder="TELEFONE*" class="fordform" required>
-                <select name="contato" class="fordform" required>
-                    <option selected>COMO DESEJA SER CONTATADO</option>
-                    <option>ELOGIO</option>
-                    <option>RECLAMAÇÃO</option>
-                    <option>SUGESTÃO</option>
+            <form id="contactForm" onsubmit="return validateForm(this);">
+                <input type="text" name="nome" id="nomeid" placeholder="NOME*" class="fordform" required>
+                <span id="nomeError" class="error-message"></span>
+
+                <input type="email" name="email" id="emailid" placeholder="E-MAIL*" class="fordform" required>
+                <span id="emailError" class="error-message"></span>
+
+                <input type="tel" name="telefone" id="telefoneid" placeholder="TELEFONE*" class="fordform" required pattern="[0-9]{10,11}">
+                <span id="telefoneError" class="error-message"></span>
+
+                <select name="contato" id="contatoid" class="fordform" required>
+                    <option value="" disabled selected>COMO DESEJA SER CONTATADO*</option>
+                    <option value="elogio">ELOGIO</option>
+                    <option value="reclamacao">RECLAMAÇÃO</option>
+                    <option value="sugestao">SUGESTÃO</option>
                 </select>
+                <span id="contatoError" class="error-message"></span>
+
             <button type="submit">Enviar</button>
             </form>
             </div>

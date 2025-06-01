@@ -49,6 +49,21 @@ button {
     float: right;
 }
 
+button:hover {
+    width: 210px; /* Aumenta um pouco a largura */
+    height: 45px; /* Aumenta um pouco a altura */
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão */
+}git
 .titulo {
     margin-left: 8px;
+}
+
+/* Estilo para mensagens de erro */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-left: 8px;
+    display: block;
+    height: 15px; /* Adicionado para evitar que o layout "salte" */
 }
