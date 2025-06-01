@@ -96,6 +96,7 @@ function SetCarToCompare(el, carClass) {
     if(!(carClass instanceof Car)){ 
         throw new Error("O segundo argumento precisa ser uma instância da classe Car.");
     }
+    // A CHAVE QUE ESTAVA AQUI FOI REMOVIDA
     
     // Encontra a posição do carro no array de carros selecionados
     const position = getCarPositionInArray(carsToCompare, carClass);
@@ -105,9 +106,10 @@ function SetCarToCompare(el, carClass) {
         if(carsToCompare.length >= 2){
             alert("Você pode comparar no máximo 2 carros. Desmarque um para selecionar outro.");
             el.checked = false; // Desmarca o checkbox para visualmente mostrar que não foi selecionado
-            return; // Sai da função para não adicionar o carro       }
+            return; // Sai da função para não adicionar o carro       
+        } // Esta chave fecha o if(carsToCompare.length >= 2)
         
-        // Acrescenta o carro ao array cso ainda não estiver lá
+        // Acrescenta o carro ao array caso ainda não estiver lá
         if(position === -1){
             carsToCompare.push(carClass);
             console.log(`Carro ${carClass.nome} adicionado para comparação.`);
@@ -120,7 +122,7 @@ function SetCarToCompare(el, carClass) {
         }
     }
     console.log("Carros para comparar atualmente:", carsToCompare.map(car => car.nome));
-}
+} // ESTA É A CHAVE CORRETA QUE FECHA A FUNÇÃO SetCarToCompare
 
 // Exibe a tabela de comparação, com validações da quantia de carros
 function ShowCompare() {
