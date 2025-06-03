@@ -23,9 +23,9 @@ div#carousel {
     background-position: center; 
 
     /* Transições para suavizar a mudança de imagem */
-    -webkit-transition: background-image 0.5s ease-in-out;
-    -moz-transition: background-image 0.5s ease-in-out;
-    transition: background-image 0.5s ease-in-out;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    -moz-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
 }
 
 div#carousel-title a {

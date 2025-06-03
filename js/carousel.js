@@ -37,7 +37,7 @@ class Carousel {
             // Configura o intervalo para exibir a próxima imagem a cada 5 segundos (5000ms)
             Carousel._interval = setInterval(function() { 
                 Carousel.Next(arr); 
-            }, 5000);
+            }, 2000);
         } else {
             console.error("O método Start precisa de um array de objetos Carousel não vazio.");
             // Lança um erro para indicar que o array é inválido, mas não interrompe a execução
