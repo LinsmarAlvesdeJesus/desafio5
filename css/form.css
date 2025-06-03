@@ -1,19 +1,24 @@
 .fordform {
     display: block;
-    width: 300px;
+    width: 300px; 
     border: 1px solid #cccccc;
     border-radius: 10px;
-    height: 26px;
+    height: 26px; 
     margin: 8px;
     font-size: 13px;
     padding: 5px;
 }
 
 select.fordform {
-    width: 310px;
-    height: 36px;
+    width: 310px; 
+    height: 36px; 
     color: #807d7d;
 }
+
+
+textarea.fordform {
+    height: auto; 
+    min-height: 150px; }
 
 input:focus-visible {
     outline: none;
@@ -41,29 +46,42 @@ h2 {
     font-weight: 800;
 }
 
-
 button {
-    width: 200px;
+    width: 300px; 
     height: 40px;
-    margin-right: 8px;
-    float: right;
+    display: block;     margin-top: 15px; 
+    margin-bottom: 8px; 
+    margin-left: 8px; 
+    margin-right: 8px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
 }
 
 button:hover {
-    width: 210px; /* Aumenta um pouco a largura */
-    height: 45px; /* Aumenta um pouco a altura */
-    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
-    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão */
-}git
+    background-color: #0056b3;
+    transform: scale(1.05); 
+}
+
 .titulo {
     margin-left: 8px;
 }
 
-/* Estilo para mensagens de erro */
 .error-message {
     color: red;
     font-size: 12px;
     margin-left: 8px;
     display: block;
-    height: 15px; /* Adicionado para evitar que o layout "salte" */
+    height: 15px; 
 }
+
+textarea { 
+    resize: none;
+    padding: 12px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 6px; 
+}
+  
